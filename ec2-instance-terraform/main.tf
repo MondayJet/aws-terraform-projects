@@ -21,7 +21,7 @@ resource "aws_security_group" "instance" {
     from_port = var.server_port
     to_port = var.server_port
     protocol = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"] ### do try this in production environment - allowing any ip is a recipe for disaster
 
   }
 
